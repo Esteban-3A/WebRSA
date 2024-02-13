@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './custom/components/core/core.module';
 import { CustomModule } from './custom/custom.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,10 +16,11 @@ import { CustomModule } from './custom/custom.module';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    CustomModule
+    CustomModule,
+    HttpClientModule
   ],
   providers: [
-    
+
   ],
   bootstrap: [AppComponent]
 })
